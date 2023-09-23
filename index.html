@@ -1,94 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogIn</title>
+    <title>博客</title>
+    <link rel="icon" href="resource\logo.ico" type="image/x-icon">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        @font-face {
+            font-family: "iFont"; /* 自定义字体名称 */
+            src: url("font/苹方-简 常规体.otf"); /* 字体文件路径 */
         }
-        html {
-            height: 100%;
+
+        /* 定义一个固定在顶部的导航栏样式 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #0081cc;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            justify-content: center; /* 这个属性可以让导航栏的选项卡靠中间居中 */
         }
+        /* 定义导航栏中的链接样式 */
+        .navbar a {
+            height: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 50px; /* 这个属性可以让链接之间有10像素的水平间隙 */
+        }
+        /* 定义一个主体内容的样式 */
+        .content {
+            margin-top: 50px; /* 这个值要和导航栏的高度一致或者更大 */
+        }
+        .href {
+            text-decoration: none;
+            color: rgb(120, 120, 255);
+        }
+        /* 定义一个固定在底部的版权栏样式 */
         body {
-            height: 100%;
-        }
-        .container {
-            height: 100%;
-            background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
-        }
-        .login-wrapper {
-            background-color: #fff;
-            width: 280px;
-            height: 390px;
-            border-radius: 15px;
-            padding: 0 50px;
             position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: #7c7c7c 0px 0px 8px 0px;
+            padding-bottom: 100px; /* 或者 margin-bottom: 100px; */
         }
-        .header {
-            font-size: 38px;
-            font-weight: bold;
-            text-align: center;
-            line-height: 150px;
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            font-size: 14px;
+            background-color: #f7f7f7;
+            color: #3e3e3e;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center; 
         }
-        .input-item {
-            display: block;
-            width: 93%;
-            margin-bottom: 20px;
-            border: 0;
-            padding: 10px;
-            border-bottom: 1px solid rgb(128, 125, 125);
-            font-size: 15px;
-            outline: none;
-        }
-        .input-item:placeholder {
-            text-transform: uppercase;
-        }
-        .btn {
-            text-align: center;
-            padding: 10px;
-            width: 93%;
-            margin-top: 40px;
-            background-color: #006eff;
-            color: #fff;
-            user-select: none;
-        }
-        .btn:active{
-            background-color: #7db4fc;
-        }
-        .msg {
-            text-align: center;
-            line-height: 88px;
-        }
-        .loginfailed {
-            display: none;
-            color: red;
-            text-align: center;
-            margin-top: 10px;
-        }
-        a {
-            text-decoration-line: none;
-            color: #abc1ee;
-        }
+
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="login-wrapper">
-            <div class="header">后台登录入口</div>
-            <div class="form-wrapper">
-                <input type="text" name="username" placeholder="管理员账户" class="input-item" autofocus>
-                <input type="password" name="password" placeholder="密码" class="input-item">
-                <div class="btn">登录</div>
-                <a class="loginfailed">用户名或密码错误</a>
-            </div>
-            
+<body style="font-family: iFont;">
+    <!-- 创建一个导航栏 -->
+    <div class="navbar">
+            <a href="#" class="navbar_logo">
+                <img src="resource/navbar_logo.png" alt="logo" width="20" height="20">
+            </a>
+            <a href="#">首页</a>
+            <a href="#">下载</a>
+            <a href="#">支持</a>
+    </div>
+
+    <!-- 创建一个主体内容 -->
+    <div class="content">
+        <p>body</p>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>0<br></a>
+        <a>3<br></a>
+        <a>3<br></a>
+        <a>3<br></a>
+        <a>3<br></a>
+        <a>3<br></a>
+        <a>3<br></a>
+        <a>3<br></a>
+    </div>
+    
+    <!-- 创建一个版权栏 -->
+    <div class="footer">
+        <div style="width: 60%; height: 70%;">
+            <img src="resource/footer_logo.png" alt="logo" width="13" height="13">
+            <a>Github: </a>
+            <a href="https://github.com/MascotL" class="href">MascotL</a>
+            <a><br>© 2023 MascotL. 本网站使用 </a>
+            <a href="https://opensource.org/license/MIT/" class="href" >MIT许可协议</a>
+            <a></a>
         </div>
     </div>
 </body>
